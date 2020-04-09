@@ -2,7 +2,7 @@
   fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
 
   <div fxFlex="40">
-    <mat-card>
+    <mat-card *ngIf="dish">
         <mat-card-header>
             <mat-card-title> {{dish.name}} </mat-card-title>
         </mat-card-header>
@@ -19,7 +19,7 @@
   </div>
 
   <div fxFlex="40">
-    <mat-list dense>
+    <mat-list dense *ngIf="dish">
       <h2>Comments</h2>
         <mat-list-item *ngFor="let d of dish.comments" class="comments">
             <p>{{d.comment}} <br>
