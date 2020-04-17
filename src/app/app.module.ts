@@ -10,7 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
-import { DishDetailComponent } from './dish-detail/dish-detail.component';
+import { DishdetailComponent } from './dish-detail/dish-detail.component';
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
 import { HeaderComponent } from './header/header.component';
@@ -23,7 +23,7 @@ import { AppRoutingModule  } from './app-routing/app-routing.module';
   declarations: [
     AppComponent,
     MenuComponent,
-    DishDetailComponent,
+    DishdetailComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,

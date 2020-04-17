@@ -23,5 +23,7 @@ export class MenuComponent implements OnInit {
   onSelect(dish: Dish){
     this.selectedDish = dish;
   }
-
+  print(id){
+    console.log(typeof(id));
+  }
 }
