@@ -28,5 +28,17 @@
       </p>
     </mat-card-content>
   </mat-card>
+  <mat-card fxFlex>
+      <mat-card-header>
+          <mat-card-title>
+            <h3>{{lead[3].name | uppercase}} </h3>
+          </mat-card-title>
+      </mat-card-header>
+      <img matCardImage src="{{lead[3].image}}" alt="image">
+      <mat-card-content>
+        {{lead[3].description}}
+      </mat-card-content>
+
+  </mat-card>
 
 </div>

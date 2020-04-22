@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CorporateLeadersService } from '../services/corporate-leaders.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  lead;
+  constructor(private corporateLeadersService: CorporateLeadersService) { }
 
   ngOnInit(): void {
+    this.lead = this.corporateLeadersService.getLeaders();
+
   }
 
 }
