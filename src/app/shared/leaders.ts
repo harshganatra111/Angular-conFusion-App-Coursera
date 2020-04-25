@@ -44,3 +44,12 @@ export const leaders = [
              'Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!',
          },
        ];
+export class Leader{
+            id: number ;
+           name: string ;
+           image: string;
+           designation: string;
+           abbr: string;
+           featured: boolean;
+           description: string;
+}
