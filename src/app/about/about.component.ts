@@ -10,8 +10,9 @@ export class AboutComponent implements OnInit {
   constructor(private corporateLeadersService: CorporateLeadersService) { }
 
   ngOnInit(): void {
-    this.lead = this.corporateLeadersService.getLeaders();
-
+    setTimeout(() => {
+      this.lead = this.corporateLeadersService.getLeaders();
+    }, 2000);
   }
 
 }
